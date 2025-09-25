@@ -175,7 +175,7 @@ body {
 /* hero section */
 
 .image-container {
-    background-image: url("images/bg-image.png");
+    background-image: url("images/bg-image.png") !important;
     background-size: cover;
     background-position: center;
     height: auto;
@@ -700,7 +700,7 @@ body {
     width: 60%;
     margin-left: 1rem;
     height: 600px;
-    background-image: url("images/vase-img.png");
+    background-image: url("images/vase-img.png") !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1037,7 +1037,7 @@ body {
 .footer {
     width: 100%;
     padding: 2rem;
-    background-image: url('images/footer-img.png');
+    background-image: url('images/footer-img.png') !important;
     background-size: cover;
     background-position: center;
     height: auto;
