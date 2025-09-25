@@ -178,7 +178,7 @@
         width: 100%;
         margin-left: 0rem;
         height: 300px;
-        background-image: url("images/vase-img.png")!important;
+        background-image: url("/images/vase-img.png")!important;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
