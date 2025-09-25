@@ -1,0 +1,710 @@
+@media (min-width:320px) and (max-width:1200px) {
+    .container {
+        max-width: 115rem;
+        margin: auto;
+        display: flex;
+        padding: 1.5rem 2rem;
+    }
+
+    .collection-section {
+        max-width: 118rem;
+        margin: auto;
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (min-width:576px) and (max-width:850px) {
+    .three {
+        display: none;
+        align-items: center;
+    }
+}
+
+@media (min-width:576px) and (max-width:600px) {
+    .two {
+        display: none;
+        align-items: center;
+    }
+}
+
+@media (min-width:930.92px) and (max-width:1115px) {
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+
+
+    .hero-text h6 {
+        font-size: 1.6rem;
+        padding: 0 40px;
+        margin-top: 10px;
+        font-family: Magic;
+    }
+
+
+}
+
+@media (min-width:930.92px) and (max-width:1115px) {
+
+    .orignal button,
+    .best button,
+    .recommend button {
+        border: 1px solid #6B05723D;
+        color: #6E6E73;
+        background-color: transparent;
+        padding: 5px 10px;
+        border-radius: 25px;
+        font-size: 12px;
+    }
+
+    .btn-darkpurple button {
+        background-color: #3C2A5A;
+        border: 1px solid #6B05723D;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 25px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1101px) and (max-width:1160px) {
+
+    .collection-name,
+    .collection-gift {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 25px;
+        font-size: 13px;
+        padding: 9px 7px 7px 7px;
+        display: inline-block;
+    }
+}
+
+@media (min-width:767px) and (max-width:930px) {
+
+    .hero-text {
+        width: 70%;
+        margin: auto;
+        padding: 10% 0;
+        text-align: center;
+    }
+}
+
+@media (min-width:992px) and (max-width:1100px) {
+
+    .collection-name,
+    .collection-gift {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 25px;
+        font-size: 11px;
+        padding: 9px 7px 7px 7px;
+        display: inline-block;
+    }
+
+    .vase-detail {
+        width: 40%;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 550px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .vase-img img {
+        width: 100%;
+        height: 550px;
+        border-radius: 15px;
+    }
+
+    .addtocart button {
+        border: 1.5px solid #6B05723D;
+        background-color: white;
+        font-size: 14px;
+        border-radius: 8px;
+        padding: 5px 15px;
+        width: 100%;
+        text-align: center;
+        margin-top: 4px;
+    }
+
+    .flow2 h2 {
+        color: #3C2A5A;
+        font-family: outfit;
+        font-size: 20px;
+    }
+
+    .price h6 {
+        font-size: 16px;
+        margin-top: 7px;
+    }
+
+    .price h5 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .flow1 button {
+        background-color: #3C2A5A;
+        color: #D6A3E8;
+        border: none;
+        font-family: Magic;
+        padding: 7px;
+        font-size: 11px;
+        width: 60px;
+        border-radius: 25px;
+        position: absolute;
+        top: 5%;
+        left: 55%;
+    }
+
+    .vase-img {
+        width: 60%;
+        margin-left: 1rem;
+        height: 550px;
+        background-image: url("images/vase-img.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        border-radius: 10px;
+    }
+}
+
+/* tab view */
+
+@media (min-width:576px) and (max-width:766.92px) {
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .hero-text {
+        width: 80%;
+        margin: auto;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    .hero-text h6 {
+        font-size: 1.5rem;
+        padding: 0 40px;
+        margin-top: 10px;
+        font-family: Magic;
+    }
+
+    .collection-cards h4 {
+        font-family: outfit;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: #3C2A5A;
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+
+    .collection-name,
+    .collection-gift {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 25px;
+        font-size: 11px;
+        padding: 9px 7px 7px 7px;
+        display: inline-block;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+
+    .collection-cards {
+        flex: 0 0 48%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        scroll-snap-align: start;
+    }
+
+    .cards::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .cards::-webkit-scrollbar-track {
+        background: #B582B9;
+        border-radius: 10px;
+    }
+
+    .cards::-webkit-scrollbar-thumb {
+        background: #6B0572;
+        border-radius: 10px;
+    }
+
+    .about {
+        width: 100%;
+        padding: 2rem 0rem;
+        background-color: #6B0572;
+        color: white;
+    }
+
+    .img-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-left: 0rem;
+        position: relative;
+    }
+
+    .about-img-slider {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .about-text {
+        margin: 2rem 0rem;
+        width: 100%;
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .about-text h1 {
+        color: white;
+        font-size: 25px;
+        font-family: logoh1;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .Vase {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .vase-img {
+        width: 100%;
+        margin-left: 0rem;
+        height: 550px;
+        background-image: url("images/vase-img.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        border-radius: 10px;
+    }
+
+    .vase-detail {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+
+    .vase-detail::-webkit-scrollbar {
+        display: none;
+    }
+
+    .flow {
+        display: flex;
+        padding: 1rem;
+        border: 1.5px solid #6B05723D;
+        border-radius: 15px;
+        gap: 20px;
+        width: 65%;
+        flex-shrink: 0;
+    }
+
+    .addtocart button {
+        border: 1.5px solid #6B05723D;
+        background-color: white;
+        font-size: 14px;
+        border-radius: 12px;
+        padding: 8px 15px;
+        width: 100%;
+        text-align: center;
+        margin-top: 4px;
+    }
+
+    .flow2 h2 {
+        color: #3C2A5A;
+        font-family: outfit;
+        font-size: 20px;
+    }
+
+    .price h6 {
+        font-size: 16px;
+        margin-top: 7px;
+    }
+
+    .price h5 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .flow1 button {
+        background-color: #3C2A5A;
+        color: #D6A3E8;
+        border: none;
+        font-family: Magic;
+        padding: 7px;
+        font-size: 11px;
+        width: 60px;
+        border-radius: 25px;
+        position: absolute;
+        top: 5%;
+        left: 55%;
+    }
+
+    .review-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+
+    }
+
+    .review-cards::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .review-cards::-webkit-scrollbar-track {
+        background: #B582B9;
+        border-radius: 10px;
+    }
+
+    .review-cards::-webkit-scrollbar-thumb {
+        background: #6B0572;
+        border-radius: 10px;
+    }
+
+    .R1 {
+        min-width: 350px;
+        max-width: 350px;
+        flex-shrink: 0;
+        height: auto;
+        border: 1.5px solid #6B05723D;
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+
+    .Review1 {
+        display: flex;
+        flex-direction: row;
+        width: 720px;
+        gap: 15px;
+    }
+
+    .footer-text h1 {
+        font-size: 4rem;
+        font-family: logh1;
+    }
+
+    .footer-text {
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        margin-top: 7%;
+    }
+
+    .footer-text h6 {
+        font-size: 20px;
+    }
+
+    .footer-btn button {
+        font-size: 16px;
+    }
+
+    .insta button {
+        border: 1.5px solid #FFFFFF66;
+        padding: 8px 15px;
+        border-radius: 15px;
+        font-family: outfit;
+        font-size: 16px;
+        font-weight: lighter;
+        color: white;
+        background-color: transparent;
+    }
+
+    .Mora-section {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .footer1 {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .footer1 h6 {
+        font-size: 20px;
+        font-family: outfit;
+        width: 92%;
+        margin-bottom: 20px;
+    }
+
+    .footer21 ul {
+        padding: 0%;
+    }
+
+    .footer2 {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        padding-top: 4%;
+    }
+
+    .insta-icon {
+        margin-left: 3px;
+    }
+}
+
+@media (min-width:767px) and (max-width:991.92px) {
+    .cards {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+
+    .collection-cards {
+        flex: 0 0 32%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        scroll-snap-align: start;
+    }
+
+    .cards::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .cards::-webkit-scrollbar-track {
+        background: #B582B9;
+        border-radius: 10px;
+    }
+
+    .cards::-webkit-scrollbar-thumb {
+        background: #6B0572;
+        border-radius: 10px;
+    }
+
+    .collection-cards h4 {
+        font-family: outfit;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #3C2A5A;
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+
+    .collection-name,
+    .collection-gift {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 25px;
+        font-size: 10px;
+        padding: 9px 7px 7px 7px;
+        display: inline-block;
+    }
+
+    .off button {
+        background-color: #3C2A5A;
+        color: #D6A3E8;
+        border: none;
+        width: 70px;
+        font-family: Magic;
+        padding: 8px 10px;
+        font-size: 11px;
+        border-radius: 25px;
+        position: absolute;
+        top: 3%;
+        left: 65%;
+    }
+
+    .about-text h1 {
+        font-size: 2.5rem;
+        font-family: logoh1;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .about-img-slider {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .Vase {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .vase-img {
+        width: 100%;
+        margin-left: 0rem;
+        height: 550px;
+        background-image: url("images/vase-img.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        border-radius: 10px;
+    }
+
+    .vase-detail {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+
+    .vase-detail::-webkit-scrollbar {
+        display: none;
+    }
+
+    .flow {
+        display: flex;
+        padding: 1rem;
+        border: 1.5px solid #6B05723D;
+        border-radius: 15px;
+        gap: 20px;
+        width: 50%;
+        flex-shrink: 0;
+    }
+
+    .Review1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .review-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 20px;
+
+    }
+
+    .footer-text {
+        width: 65%;
+        margin: auto;
+        text-align: center;
+        margin-top: 7%;
+    }
+
+
+    .footer1 {
+        width: 45%;
+    }
+
+    .footer2 {
+        width: 55%;
+        display: flex;
+        gap: 30px;
+        padding-top: 4%;
+    }
+
+    .footer1 h6 {
+        font-size: 17px;
+        font-family: outfit;
+        width: 92%;
+    }
+
+    .footer2 li a {
+        font-size: 16px;
+        color: #2F2F2F;
+        font-family: outfit;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .icon-size {
+        font-size: 18px;
+    }
+
+    .insta-icon {
+        border: 1.5px solid #6B05723D;
+        width: 26px;
+        height: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 25px;
+    }
+
+}
+
+@media (min-width:991.92px) and (max-width:1200px) {
+    .off button {
+        background-color: #3C2A5A;
+        color: #D6A3E8;
+        border: none;
+        width: 70px;
+        font-family: Magic;
+        padding: 8px 10px;
+        font-size: 11px;
+        border-radius: 25px;
+        position: absolute;
+        top: 3%;
+        left: 65%;
+    }
+
+
+}
