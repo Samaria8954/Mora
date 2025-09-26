@@ -178,7 +178,7 @@
         width: 100%;
         margin-left: 0rem;
         height: 300px;
-        background-image: url("/images/vase-img.png")!important;
+        background-image: url("/images/vase-img.png") !important;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -428,6 +428,52 @@
         align-items: center;
         text-align: center;
     }
+
+    /* login page */
+    .login-image {
+        display: none;
+    }
+
+    .Login-form {
+        width: 100%;
+        height: auto;
+        margin: 25% auto 25% auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-content {
+        width: 95%;
+        margin: auto;
+        border: 1px solid #0000003D;
+        border-radius: 12px;
+        padding: 5rem 2rem;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(2px);
+        z-index: 2;
+    }
+
+    .login-heading h1 {
+        font-size: 4.5rem;
+
+    }
+
+    .vector-box {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .continue button {
+        margin-top: 8%;
+    }
+
+    .google button {
+        margin-top: 8%;
+    }
+
+    
 }
 
 @media (min-width:320px) and (max-width:380px) {
@@ -526,7 +572,7 @@
         border-radius: 15px;
         font-family: outfit;
         font-size: 14px;
-        font-weight: lighter;
+        font-weight: 500;
         color: #2F2F2F;
         background-color: white;
     }
@@ -555,9 +601,41 @@
         border-radius: 15px;
         font-family: outfit;
         font-size: 14px;
-        font-weight: lighter;
+        font-weight: 500;
         color: white;
         background-color: transparent;
+    }
+
+    /* login page */
+
+    .upper-img {
+        width: 200px;
+        height: auto;
+        transform: rotate(19deg);
+        position: absolute;
+        left: 60%;
+        top: -13%;
+        z-index: 1;
+    }
+
+    .lower-img {
+        width: 200px;
+        height: auto;
+        transform: rotate(207deg);
+        position: absolute;
+        left: -19%;
+        top: 82%;
+        z-index: 1;
+    }
+    .form-content h6 {
+        font-size: 12px;
+        margin-top: 10%;
+    }
+    .input-box input {
+    font-size: 12px;
+}
+    .input-box {
+        margin-top: 15%;
     }
 }
 
@@ -670,7 +748,7 @@
         border-radius: 15px;
         font-family: outfit;
         font-size: 14px;
-        font-weight: lighter;
+        font-weight: 500;
         color: #2F2F2F;
         background-color: white;
     }
@@ -699,9 +777,41 @@
         border-radius: 15px;
         font-family: outfit;
         font-size: 14px;
-        font-weight: lighter;
+        font-weight: 500;
         color: white;
         background-color: transparent;
+    }
+
+     /* login page */
+
+    .upper-img {
+        width: 200px;
+        height: auto;
+        transform: rotate(19deg);
+        position: absolute;
+        left: 66%;
+        top: -13%;
+        z-index: 1;
+    }
+
+    .lower-img {
+        width: 200px;
+        height: auto;
+        transform: rotate(207deg);
+        position: absolute;
+        left: -19%;
+        top: 83%;
+        z-index: 1;
+    }
+    .form-content h6 {
+        font-size: 14px;
+        margin-top: 10%;
+    }
+     .input-box input {
+    font-size: 14px;
+}
+    .input-box {
+        margin-top: 10%;
     }
 }
 
@@ -772,5 +882,47 @@
         height: 35px;
     }
 
+
+}
+@media (min-width:380px) and (max-width:450.92px){
+ .upper-img {
+        width: 200px;
+        height: auto;
+        transform: rotate(19deg);
+        position: absolute;
+        left: 65%;
+        top: -13%;
+        z-index: 1;
+    }
+
+    .lower-img {
+        width: 200px;
+        height: auto;
+        transform: rotate(207deg);
+        position: absolute;
+        left: -13%;
+        top: 82%;
+        z-index: 1;
+    }
+}
+@media (min-width:451px) and (max-width:575.92px){
+    .upper-img {
+        width: 200px;
+        height: auto;
+        transform: rotate(19deg);
+        position: absolute;
+        left: 75%;
+        top: -13%;
+        z-index: 1;
+    }
+    .lower-img {
+        width: 200px;
+        height: auto;
+        transform: rotate(207deg);
+        position: absolute;
+        left: -10%;
+        top: 85%;
+        z-index: 1;
+    }
 
 }
