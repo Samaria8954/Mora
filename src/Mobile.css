@@ -430,6 +430,9 @@
     }
 
     /* login page */
+    .login-nav{
+    display: block;
+}
     .login-image {
         display: none;
     }
@@ -437,7 +440,7 @@
     .Login-form {
         width: 100%;
         height: auto;
-        margin: 25% auto 25% auto;
+        margin: 15% auto 25% auto;
         position: relative;
         display: flex;
         align-items: center;

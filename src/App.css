@@ -1199,7 +1199,9 @@ body {
 }
 
 /* Login Page */
-
+.login-nav{
+    display: none;
+}
 .login-image {
     background-image: url("/images/login-Image.png") !important;
     background-size: cover;
@@ -1405,3 +1407,4 @@ body {
     width: 100%;
     height: auto
 }
+

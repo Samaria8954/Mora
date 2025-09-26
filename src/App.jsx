@@ -8,6 +8,8 @@ import { Home } from "./pages/Home";
 import { LoginPage } from "./pages/LoginPage";
 import { ProductPage } from "./pages/ProductPage";
 import { CartPage } from "./pages/CartPage";
+import { ReviewPage } from "./pages/Review";
+import { MenuPage } from "./pages/MenuPage";
 
 // React outer DOM
 const router = createBrowserRouter([
@@ -24,6 +26,16 @@ const router = createBrowserRouter([
                 path: "login",
                 element: <LoginPage />
             },
+             {
+                path: "review",
+                element: < ReviewPage />
+            },
+
+             {
+                path: "menu",
+                element: < MenuPage />
+            },
+
             {
                 path: "product",
                 element: <ProductPage />

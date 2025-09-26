@@ -1,9 +1,13 @@
 import { Footer } from "../components/UI/Footer";
+import { LoginNav } from "../components/UI/LoginNav";
 
 export const LoginPage = () => {
     return (
 
         <>
+            <div className="login-nav">
+                <LoginNav />
+            </div>
             <div className="login-image">
                 <div className="login-text">
                     <h2>Mora</h2>
