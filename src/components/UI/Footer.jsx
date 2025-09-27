@@ -1,9 +1,19 @@
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export const Footer = () => {
+export const Footer = ({bgImage}) => {
     return (
         <>
-            <div className="footer">
+            <div
+                className="footer"
+                style={{
+                    backgroundImage: `url(${bgImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    width: "100%",
+                    padding: "2rem",
+                    color: "white",
+                }}
+            >
                 <div className="footer-text">
                     <h1>Bestseller of the Season</h1>
                     <h6>Mora is a flower brand rooted in elegance, </h6>

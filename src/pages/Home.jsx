@@ -22,7 +22,7 @@ export const Home = () => {
             <VaseCollection />
             <CardsSection2 />
             <CustomerServices />
-            <Footer />
+            <Footer bgImage="/images/footer-img.png"/>
         </>
     );
 };

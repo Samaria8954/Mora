@@ -84,7 +84,7 @@
     }
 
     .collection img {
-        width: 55px;
+        width: 40px;
         height: auto;
     }
 
@@ -95,13 +95,21 @@
         justify-content: center;
         align-items: center;
         width: 80%;
-        height: 85px;
+        height: 65px;
         margin: auto;
+    }
+
+    .circle-text h4 {
+        text-align: center;
+        font-family: outfit;
+        font-size: 1.2rem;
+        color: #6B0572;
+        margin-top: 10px;
     }
 
     .collection-item {
         flex: 0 0 auto;
-        width: 100px;
+        width: 75px;
         text-align: center;
     }
 
@@ -430,9 +438,10 @@
     }
 
     /* login page */
-    .login-nav{
-    display: block;
-}
+    .login-nav {
+        display: block;
+    }
+
     .login-image {
         display: none;
     }
@@ -476,7 +485,11 @@
         margin-top: 8%;
     }
 
-    
+    /* collection page with filter */
+
+    .purple-box {
+        display: none;
+    }
 }
 
 @media (min-width:320px) and (max-width:380px) {
@@ -493,6 +506,17 @@
     }
 
     .hero-text {
+        width: 95%;
+        margin: auto;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    .hero-text2 h1 {
+        font-size: 5rem;
+    }
+
+    .hero-text2 {
         width: 95%;
         margin: auto;
         padding: 10% 0;
@@ -630,17 +654,101 @@
         top: 82%;
         z-index: 1;
     }
+
     .form-content h6 {
         font-size: 12px;
         margin-top: 10%;
     }
+
     .input-box input {
-    font-size: 12px;
-}
+        font-size: 12px;
+    }
+
     .input-box {
         margin-top: 15%;
     }
+
+    /* menu bar  starts */
+
+    .flower-cards {
+        padding: 0 1rem;
+    }
+
+    .flower-title h4 {
+        font-size: 18px;
+        color: black;
+        font-weight: 300;
+    }
+
+    .flower-img img {
+        width: 110px;
+        height: auto;
+    }
+
+    .flower-img2 img {
+        width: 70px;
+        height: auto;
+    }
 }
+
+@media (min-width:320px) and (max-width:500px) {
+    .offcanvas {
+        width: 95% !important;
+        padding: 0 1rem;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background-color: #fff;
+        box-shadow: -8px 0 25px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .menu-vases h1 {
+        font-family: logoh1;
+        font-size: 3.5rem;
+        color: #3C2A5B;
+        margin-bottom: 2%;
+    }
+
+    .slider-box {
+        flex: 0 0 calc(34% - 10px);
+        max-width: 200px;
+        border-radius: 12px;
+    }
+
+    .card-menu h6 {
+        font-size: 14px;
+    }
+
+    .card2-menu h6 {
+        font-size: 14px;
+    }
+
+    .flower-icon button i {
+        color: #6B0572;
+        font-size: 25px;
+    }
+
+    .menu-vases {
+        margin-top: 9%;
+    }
+
+    .flower-title {
+        width: 50%;
+    }
+
+    .flower-img {
+        width: 25%;
+        height: auto;
+    }
+
+    .flower-icon {
+        width: 25%;
+        height: auto;
+        text-align: end;
+    }
+}
+
+/* menu bar ends */
 
 
 @media (min-width:380.92px) and (max-width:576px) {
@@ -657,6 +765,17 @@
     }
 
     .hero-text {
+        width: 90%;
+        margin: auto;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    .hero-text2 h1 {
+        font-size: 6rem;
+    }
+
+    .hero-text2 {
         width: 90%;
         margin: auto;
         padding: 10% 0;
@@ -785,7 +904,7 @@
         background-color: transparent;
     }
 
-     /* login page */
+    /* login page */
 
     .upper-img {
         width: 200px;
@@ -806,13 +925,16 @@
         top: 83%;
         z-index: 1;
     }
+
     .form-content h6 {
         font-size: 14px;
         margin-top: 10%;
     }
-     .input-box input {
-    font-size: 14px;
-}
+
+    .input-box input {
+        font-size: 14px;
+    }
+
     .input-box {
         margin-top: 10%;
     }
@@ -822,7 +944,7 @@
 
     .cards-heading button {
         border: 1px solid #D6A2E8;
-        color: #3C2A5A;
+        color: #6B0572;
         background-color: transparent;
         font-family: Magic;
         padding: 0px 14px;
@@ -840,7 +962,7 @@
 
     .cards-heading button {
         border: 1px solid #D6A2E8;
-        color: #3C2A5A;
+        color: #6B0572;
         background-color: transparent;
         font-family: Magic;
         padding: 0px 19px;
@@ -853,6 +975,13 @@
 
 @media (min-width:480px) and (max-width:575.92px) {
     .hero-text {
+        width: 75%;
+        margin: auto;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    .hero-text2 {
         width: 75%;
         margin: auto;
         padding: 10% 0;
@@ -876,7 +1005,7 @@
 
     .cards-heading button {
         border: 1px solid #D6A2E8;
-        color: #3C2A5A;
+        color: #6B0572;
         background-color: transparent;
         font-family: Magic;
         padding: 0px 22px;
@@ -887,8 +1016,9 @@
 
 
 }
-@media (min-width:380px) and (max-width:450.92px){
- .upper-img {
+
+@media (min-width:380px) and (max-width:450.92px) {
+    .upper-img {
         width: 200px;
         height: auto;
         transform: rotate(19deg);
@@ -908,7 +1038,8 @@
         z-index: 1;
     }
 }
-@media (min-width:451px) and (max-width:575.92px){
+
+@media (min-width:451px) and (max-width:575.92px) {
     .upper-img {
         width: 200px;
         height: auto;
@@ -918,6 +1049,7 @@
         top: -13%;
         z-index: 1;
     }
+
     .lower-img {
         width: 200px;
         height: auto;

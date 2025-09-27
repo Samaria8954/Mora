@@ -44,7 +44,7 @@ export const CollectionSection = () => {
     return (
         <div className="collection-section">
             <h1>Flowers For Every Moment</h1>
-            <CollectionSlider collections={collections} />
+            <CollectionSlider collections={collections}  />
         </div>
     );
 };
