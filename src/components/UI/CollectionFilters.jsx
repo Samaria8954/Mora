@@ -18,7 +18,7 @@ export const CollectionFilters = () => {
     ];
 
     return (
-        <div className="collection-section py-5 my-5">
+        <div className="collection-section ">
             <CollectionSlider collections={collections} />
         </div>
     );
