@@ -596,6 +596,27 @@
         top: 85%;
         z-index: 1;
     }
+
+     /* collection display with filters */
+
+    .filter-list {
+        width: 60%;
+        height: auto;
+        font-family: outfit;
+
+    }
+    
+.filter-cards {
+    width: 100%;
+}
+
+    .filter-cards {
+        width: 100%;
+    }
+    .filter-card1>div {
+        flex: 1 1 calc(48% - 15px);
+    }
+  
 }
 
 @media (min-width:767px) and (max-width:991.92px) {
@@ -845,6 +866,23 @@
         right: 4%;
         top: 88%;
         z-index: 1;
+    }
+
+    /* collection display with filters */
+
+    .filter-list {
+        width: 40%;
+        height: auto;
+        font-family: outfit;
+
+    }
+
+    .filter-cards {
+        width: 60%;
+    }
+
+    .filter-card1>div {
+        flex: 1 1 calc(48% - 15px);
     }
 }
 

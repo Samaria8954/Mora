@@ -490,6 +490,12 @@
     .purple-box {
         display: none;
     }
+
+    .filter-cards {
+        width: 100%;
+    }
+
+   
 }
 
 @media (min-width:320px) and (max-width:380px) {
@@ -689,6 +695,9 @@
         width: 70px;
         height: auto;
     }
+     .filter-card1>div {
+        flex: 1 1 calc(95% - 15px);
+    }
 }
 
 @media (min-width:320px) and (max-width:500px) {
@@ -746,6 +755,7 @@
         height: auto;
         text-align: end;
     }
+
 }
 
 /* menu bar ends */
@@ -937,6 +947,9 @@
 
     .input-box {
         margin-top: 10%;
+    }
+     .filter-card1>div {
+        flex: 1 1 calc(48% - 15px);
     }
 }
 
