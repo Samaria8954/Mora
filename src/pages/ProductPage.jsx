@@ -1,5 +1,13 @@
+import { Navbar } from "../components/UI/navbar";
+import { Footer } from "../components/UI/Footer";
+import { Gallery } from "../components/UI/GalleryImage";
+
 export const ProductPage = () => {
     return (
-       <h1>product page</h1>
+      <>
+      <Navbar />
+      <Gallery />
+    <Footer bgImage="/images/product-footer.png" />
+      </>
     );
 };

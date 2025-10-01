@@ -45,6 +45,7 @@ export const FilterMobile = ({ repeatPages = 1 }) => {
         sliderInstance.current.destroy();
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
