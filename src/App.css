@@ -2005,11 +2005,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .gallery-container {
-    max-width: 600px;
     width: 100%;
 }
 
@@ -2055,7 +2053,7 @@ body {
 
 .action-buttons button:last-child {
     position: absolute;
-    top: 375px;
+    top: 425px;
     right: 0;
 }
 
@@ -2118,121 +2116,162 @@ body {
 .pro-head {
     display: flex;
     font-family: outfit;
-    gap:5px;
+    gap: 5px;
     align-items: end;
     color: #3C2A5A;
 }
-.pro-head h6{
+
+.pro-head h6 {
     font-size: 20px;
     font-weight: 300;
 }
-.pro-head h5{
+
+.pro-head h5 {
     font-size: 33px;
-       font-weight: 400;
+    font-weight: 400;
 }
-.product-text h6{
-     font-size: 22px;
+
+.product-text h6 {
+    font-size: 22px;
     font-weight: 300;
-     font-family: outfit;
-      color: #3C2A5A;
-      margin-top: 2%;
+    font-family: outfit;
+    color: #3C2A5A;
+    margin-top: 2%;
 }
-.order-now button{
+
+.order-now button {
     background-color: #6B0572;
     color: white;
     padding: 10px 0px;
     width: 100%;
     font-size: 18px;
     font-weight: 500;
-    font-family:MyFont ;
+    font-family: MyFont;
     border-radius: 10px;
     margin-top: 3%;
     border: 0;
 }
-.basket button{
+
+.basket button {
     background-color: white;
     color: black;
     padding: 10px 0px;
     width: 100%;
     font-size: 18px;
     font-weight: 400;
-    font-family:MyFont ;
+    font-family: MyFont;
     border-radius: 10px;
     margin-top: 3%;
     border: 0;
     border: 1px solid #6B05723D;
 }
-.features-gallery{
+
+.features-gallery {
     background-color: #EAB8E43D;
     padding: 15px;
     border-radius: 12px;
 }
-.feature1{
+
+.feature1 {
     display: flex;
     gap: 5px;
     align-items: center;
     margin-bottom: 5%;
 }
-.feature2{
+
+.feature2 {
     display: flex;
     gap: 5px;
     align-items: center;
     margin-bottom: 5%;
 }
-.feature3{
+
+.feature3 {
     display: flex;
     gap: 5px;
     align-items: center;
 }
-.feature-icon .icon-nav{
-    color:#6B0572;
+
+.feature-icon .icon-nav {
+    color: #6B0572;
 }
-.feature-text h5{
-  color:#3C2A5A;
-  font-size: 18px;
-  font-family: outfit;
-  font-weight: 400;
+
+.feature-text h5 {
+    color: #3C2A5A;
+    font-size: 18px;
+    font-family: outfit;
+    font-weight: 400;
 }
-.feature-text h6{
-  color:#3C2A5A;
-  font-size: 16px;
-  font-family: outfit;
-  font-weight: 300;
+
+.feature-text h6 {
+    color: #3C2A5A;
+    font-size: 16px;
+    font-family: outfit;
+    font-weight: 300;
 }
-.gallery-payment{
+
+.gallery-payment {
     display: flex;
     gap: 10px;
     border: 1px solid #0000003D;
-    padding:7px 15px;
+    padding: 7px 15px;
     border-radius: 12px;
     margin: 2% 0;
+    justify-content: space-between;
 }
-.gallery-payment button{
-    border:  1px solid #0000003D;
+.gallery-payment h6 {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: outfit;
+    color: #3C2A5A;
+    margin-top: 2%;
+}
+.gallery-payment button {
+    border: 1px solid #0000003D;
     background-color: transparent;
     border-radius: 10px;
     padding: 7px 27px;
-}
-.gallery-payment button img{
-    width: 58px;
-    height:25px;
+    width: 20%;
 }
 
-.product-discription h2{
+.gallery-payment button img {
+    width: 100%;
+    height: 25px;
+}
+
+.product-discription h2 {
     margin-top: 3%;
     padding: 5px 0;
     color: #3C2A5A;
     font-family: outfit;
     font-weight: 600;
     font-size: 22px;
-    border-bottom: 1px solid #000000;
-    width: 150px;
+   
 }
-.product-discription h6{
+
+.product-discription h6 {
     color: #3C2A5A;
     font-family: outfit;
     font-weight: 300;
     font-size: 20px;
     margin-top: 20px;
-margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+.addbasket{
+    display: flex;
+    justify-content: center;
+    margin: 4% 0;
+}
+.addbasket button {
+    background-color: #6B0572;
+    color:white;
+    padding: 10px 0px;
+    width: 95%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: MyFont;
+    border-radius: 10px;
+    margin-top: 3%;
+    border: 0;
+    border: 1px solid #6B05723D;
 }

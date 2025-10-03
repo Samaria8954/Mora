@@ -495,7 +495,139 @@
         width: 100%;
     }
 
-   
+    /* product detail page  */
+    .product-detail {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .product-img {
+        width: 100%;
+    }
+
+    .product-text {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .product-discription {
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    .product-discription h2 {
+        margin-top: 3%;
+        padding: 5px 0;
+        color: #3C2A5A;
+        font-family: outfit;
+        font-weight: 600;
+        font-size: 22px;
+
+    }
+
+    .fullscreen-overlay span {
+        position: absolute;
+        top: 22px;
+        right: 24px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .product-discription h6 {
+        color: #3C2A5A;
+        font-family: outfit;
+        font-weight: 300;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pro-head span {
+        font-size: 20px;
+        margin-bottom: 3px;
+        color: #EB5757;
+        text-decoration: line-through;
+    }
+
+    .pro-head h5 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .product-text h6 {
+        font-size: 21px;
+        font-weight: 300;
+        font-family: outfit;
+        color: #3C2A5A;
+        margin-top: 2%;
+        font-weight: 600;
+    }
+
+    .gallery-slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-slider .slider-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 8px;
+    }
+
+    .gallery-slider .slider-dots .dot {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background: white;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .gallery-slider .slider-dots .dot.active {
+        width: 20px;
+        border-radius: 10px;
+        background: white;
+    }
+
+    .gallery-payment {
+        display: flex;
+        gap: 10px;
+        border: 0;
+        padding: 7px 10px;
+        border-radius: 12px;
+        margin: 2% 2%;
+        justify-content: space-between;
+    }
+
+    .gallery-payment button {
+        border: 1px solid #0000003D;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px 27px;
+        width: 32%;
+    }
 }
 
 @media (min-width:320px) and (max-width:380px) {
@@ -695,8 +827,17 @@
         width: 70px;
         height: auto;
     }
-     .filter-card1>div {
+
+    .filter-card1>div {
         flex: 1 1 calc(95% - 15px);
+    }
+
+    /* product detail page */
+
+    .action-buttons button:last-child {
+        position: absolute;
+        top: 255px;
+        right: 0;
     }
 }
 
@@ -948,9 +1089,13 @@
     .input-box {
         margin-top: 10%;
     }
-     .filter-card1>div {
+
+    .filter-card1>div {
         flex: 1 1 calc(48% - 15px);
     }
+
+
+
 }
 
 @media (min-width:320px) and (max-width:420.92px) {
@@ -970,7 +1115,15 @@
 
 }
 
-@media (min-width:421px) and (max-width:480px) {
+@media (min-width:380px) and (max-width:420.92px) {
+    .action-buttons button:last-child {
+        position: absolute;
+        top: 320px;
+        right: 0;
+    }
+}
+
+@media (min-width:421px) and (max-width:480.92px) {
 
 
     .cards-heading button {
@@ -984,6 +1137,27 @@
         height: 35px;
     }
 
+    .action-buttons button:last-child {
+        position: absolute;
+        top: 362px;
+        right: 0;
+    }
+}
+
+@media (min-width:481px) and (max-width:520.92px) {
+    .action-buttons button:last-child {
+        position: absolute;
+        top: 425px;
+        right: 0;
+    }
+}
+
+@media (min-width:521px) and (max-width:575.92px) {
+    .action-buttons button:last-child {
+        position: absolute;
+        top: 465px;
+        right: 0;
+    }
 }
 
 @media (min-width:480px) and (max-width:575.92px) {
@@ -1050,6 +1224,7 @@
         top: 82%;
         z-index: 1;
     }
+
 }
 
 @media (min-width:451px) and (max-width:575.92px) {
@@ -1072,5 +1247,6 @@
         top: 85%;
         z-index: 1;
     }
+
 
 }

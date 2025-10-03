@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { IoIosMenu, IoIosSearch } from "react-icons/io";
-import { PiCourtBasketballDuotone } from "react-icons/pi";
 import { IoIosClose } from "react-icons/io";
-
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 export const LoginNav = () => {
     const [showSearch, setShowSearch] = useState(false);
@@ -18,7 +17,7 @@ export const LoginNav = () => {
                            <IoIosSearch className="icon-nav1" />
                        </div>
                        <div className="m1">
-                           <PiCourtBasketballDuotone className="icon-nav1" />
+                           <HiOutlineShoppingBag className="icon-nav1" />
                        </div>
                        <div
                            className="m1"

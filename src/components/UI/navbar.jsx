@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { IoIosMenu, IoIosSearch } from "react-icons/io";
-import { PiCourtBasketballDuotone } from "react-icons/pi";
 import { IoIosClose } from "react-icons/io";
-
+import { RiShoppingBag2Line } from "react-icons/ri";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 export const Navbar = () => {
     const [showSearch, setShowSearch] = useState(false);
@@ -33,7 +33,7 @@ export const Navbar = () => {
 
                     {/* Basket */}
                     <div className="m1">
-                        <PiCourtBasketballDuotone className="icon-nav" />
+                        <RiShoppingBag2Line className="icon-nav" />
                         Basket
                     </div>
                 </div>
@@ -43,7 +43,7 @@ export const Navbar = () => {
                         <IoIosSearch className="icon-nav1" />
                     </div>
                     <div className="m1">
-                        <PiCourtBasketballDuotone className="icon-nav1" />
+                        <HiOutlineShoppingBag className="icon-nav1" />
                     </div>
                     <div
                         className="m1"
@@ -181,5 +181,5 @@ export const Navbar = () => {
             </div>
         </>
     );
-    
+
 };
