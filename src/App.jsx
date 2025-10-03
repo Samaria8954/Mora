@@ -11,6 +11,8 @@ import { CartPage } from "./pages/CartPage";
 import { ReviewPage } from "./pages/Review";
 import { CollectionPage } from "./pages/CollectionPage";
 
+
+
 // React outer DOM
 const router = createBrowserRouter([
     {
@@ -39,6 +41,7 @@ const router = createBrowserRouter([
                 path: "product",
                 element: <ProductPage />
             },
+             
             {
                 path: "cart",
                 element: <CartPage />

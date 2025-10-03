@@ -111,7 +111,7 @@ export const Gallery = () => {
                                     <h5>Free Delivery</h5>
                                     <h6>on order over OMR 32</h6>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                         <div className="gallery-payment">
                             <h6 className='ps-1 pe-4'>Way To Proceed</h6>

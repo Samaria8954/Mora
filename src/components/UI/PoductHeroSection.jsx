@@ -3,7 +3,7 @@ import { BsStars } from "react-icons/bs";
 import { CollectionNavbar } from "./CollectionNavbar";
 import { LoginNav } from "./LoginNav";
 
-export const CollectionHeroSection = () => {
+export const ProductHeroSection = ({ proTitle , probgimg }) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 576);
 
     useEffect(() => {
@@ -24,27 +24,25 @@ export const CollectionHeroSection = () => {
                 </div>
             ) : (
                 // Desktop / Tablet view → Purple Box + CollectionNavbar
-                <div className="purple-box purples">
+                <div className="purple-box " style={{
+                    backgroundImage: `url(${probgimg})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    width: "100%",
+                    padding: "2rem",
+                    color: "white",
+                }}>
                     <div className="container-section">
                         <CollectionNavbar />
-                        <div className="hero-text2">
-                            <h1>Flowers Collection</h1>
+                        <div className="hero-text2" style={{ paddingBottom: "3%" }}>
+                            <h1>{proTitle}</h1>
                             <h6>
                                 Brighten someone’s day with fresh, handpicked
                                 flowers delivered to their doorstep. From romantic
                                 roses to cheerful sunflowers, find the perfect bloom
                                 for every moment.
                             </h6>
-                            <button type="button" className="btn-desktop">
-                                Deliver a Little Magic Today
-                                <BsStars
-                                    style={{
-                                        color: "goldenrod",
-                                        fontSize: "20px",
-                                        marginLeft: "5px",
-                                    }}
-                                />
-                            </button>
+
                         </div>
                     </div>
                 </div>

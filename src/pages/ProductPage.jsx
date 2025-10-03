@@ -3,6 +3,7 @@ import { Footer } from "../components/UI/Footer";
 import { Gallery } from "../components/UI/GalleryImage";
 import { useEffect, useState } from "react";
 import { GalleryPhone } from "../components/UI/GalleryPhone";
+import { ProductHeroSection } from "../components/UI/PoductHeroSection";
 
 
 export const ProductPage = () => {
@@ -18,7 +19,7 @@ export const ProductPage = () => {
 
   return (
     <>
-      <Navbar />
+     <ProductHeroSection proTitle="Valentines Special" probgimg="/images/valentines.jpg"/>
 
       {/* Gallery */}
       {isMobile ? <GalleryPhone /> : <Gallery />}

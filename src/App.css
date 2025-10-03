@@ -1603,9 +1603,10 @@ body {
 
 
 /* collection page with filter */
-
+.purples{
+ background-color: #6B0572;
+}
 .purple-box {
-    background-color: #6B0572;
     color: white;
     font-family: logoh1;
 }
@@ -1990,6 +1991,7 @@ body {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    margin-top: 2%;
 }
 
 .product-img {

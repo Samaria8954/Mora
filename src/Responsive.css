@@ -642,11 +642,22 @@
         padding: 7px 27px;
         width: 19%;
     }
+
     .action-buttons button:last-child {
-    position: absolute;
-    top: 425px;
-    right: 0;
-}
+        position: absolute;
+        top: 425px;
+        right: 0;
+    }
+
+    .menu {
+        display: flex;
+        width: 70%;
+        gap: 15px;
+        justify-content: end;
+        align-items: center;
+        font-size: 1.4rem;
+        font-family: Magic;
+    }
 }
 
 @media (min-width:767px) and (max-width:991.92px) {
@@ -978,11 +989,12 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
     .action-buttons button:last-child {
-    position: absolute;
-    top: 380px;
-    right: 0;
-}
+        position: absolute;
+        top: 380px;
+        right: 0;
+    }
 }
 
 @media (min-width:991px) and (max-width:1150px) {

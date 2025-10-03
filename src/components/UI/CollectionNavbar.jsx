@@ -3,10 +3,11 @@ import { IoIosMenu, IoIosSearch } from "react-icons/io";
 import { PiCourtBasketballDuotone } from "react-icons/pi";
 import { IoIosClose } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
-
+import { useNavigate } from "react-router-dom";
 
 export const CollectionNavbar = () => {
     const [showSearch, setShowSearch] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <>
@@ -33,7 +34,7 @@ export const CollectionNavbar = () => {
                     </div>
                     {/* Account */}
                     <div className="m1">
-                        <CgProfile className="icon-nav" />
+                        <CgProfile className="icon-nav" onClick={() => navigate("/login")} />
                         My Account
                     </div>
                     {/* Basket */}
