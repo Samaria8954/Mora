@@ -658,6 +658,16 @@
         font-size: 1.4rem;
         font-family: Magic;
     }
+    /* model pop up */
+    .model-btn button {
+    font-size: 22px;
+    font-family: outfit;
+    font-weight: 400;
+    border-radius: 12px;
+    width: 33%;
+    border: 0;
+    padding: 7px 10px;
+}
 }
 
 @media (min-width:767px) and (max-width:991.92px) {

@@ -33,8 +33,8 @@ export const CollectionNavbar = () => {
                         Search
                     </div>
                     {/* Account */}
-                    <div className="m1">
-                        <CgProfile className="icon-nav" onClick={() => navigate("/login")} />
+                    <div className="m1" onClick={() => navigate("/login")}>
+                        <CgProfile className="icon-nav"  />
                         My Account
                     </div>
                     {/* Basket */}

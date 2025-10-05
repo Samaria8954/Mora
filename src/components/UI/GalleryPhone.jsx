@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { GalleryCardsSection2 } from "./GalleryCardsSection2";
+import { PerfectGift } from "./PerfectGift";
 
 export const GalleryPhone = () => {
   const images = [
@@ -80,14 +81,7 @@ export const GalleryPhone = () => {
             <span>60</span>
           </div>
           <h6>Blush Elegance – Pink Roses Bouquet</h6>
-          <div className="discription my-sm-4 my-5">
-            <button className="collection-name" style={{ fontSize: "16px" }}>
-              🩷 Romantic Choice
-            </button>
-            <button className="collection-gift" style={{ fontSize: "16px" }}>
-              💐 Perfect Gift
-            </button>
-          </div>
+           <PerfectGift />
         </div>
       </div>
 

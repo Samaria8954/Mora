@@ -1,10 +1,12 @@
-export const CollectionCards = ({ catogery, discount,title,Perfectgift,flowering }) => {
+import { DynamicPerfect } from "./DynamicPerfect";
+
+export const CollectionCards = ({ discount, title, flowering, catogery, Perfectgift }) => {
     return (
         <div className="collection-cards">
 
-    <div className="off">
-         <button type="button">{discount}% Off</button>
-    </div>
+            <div className="off">
+                <button type="button">{discount}% Off</button>
+            </div>
             <img src={flowering} alt="" />
             <h4 className="me-5">{title}</h4>
             <div className="price mt-3 mt-sm-1">
@@ -12,14 +14,10 @@ export const CollectionCards = ({ catogery, discount,title,Perfectgift,flowering
                 <h5>40</h5>
                 <span>60</span>
             </div>
-            <div className="discription my-1 my-sm-3" >
-                <button className="collection-name">
-                    {catogery}
-                </button>
-                <button className="collection-gift">
-                    {Perfectgift}
-                </button>
-            </div>
+            <DynamicPerfect
+                catogery={catogery}
+                Perfectgift={Perfectgift}
+            />
 
         </div>
     );

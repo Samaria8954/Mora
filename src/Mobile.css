@@ -628,6 +628,61 @@
         padding: 10px 27px;
         width: 32%;
     }
+
+    .custom-modal-box {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-height: 99vh;
+        background-color: #EAB8E4;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 2rem;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .model-heading h1 {
+        color: #3C2A5A;
+        font-family: logoh1;
+        font-size: 34px;
+        padding-bottom: 3px;
+        font-weight: 400;
+        border-bottom: 3px solid white;
+    }
+
+    .model-btn button {
+        font-size: 18px;
+        font-family: outfit;
+        font-weight: 400;
+        border-radius: 12px;
+        width: 48%;
+        border: 0;
+        padding: 7px 10px;
+    }
+    .MORA-section h6{
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+  text-align: justify;
+}
+.MORA-section{
+    width: 100%;
+    padding: 1rem;
+}
+
+.MORA-section ul li {
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    
+}
 }
 
 @media (min-width:320px) and (max-width:380px) {
@@ -839,6 +894,19 @@
         top: 255px;
         right: 0;
     }
+    .tab1{
+     flex: 0 0 calc(100%);
+}
+.MORA-section h1{
+    font-family: logoh1;
+    font-weight: 400;
+    font-size: 65px;
+    text-align: center;
+    color: #000000;
+
+}
+
+
 }
 
 @media (min-width:320px) and (max-width:500px) {
@@ -1094,6 +1162,14 @@
         flex: 1 1 calc(48% - 15px);
     }
 
+.MORA-section h1{
+    font-family: logoh1;
+    font-weight: 400;
+    font-size: 74px;
+    text-align: center;
+    color: #000000;
+
+}
 
 
 }
@@ -1201,6 +1277,14 @@
         height: 35px;
     }
 
+.MORA-section h1{
+    font-family: logoh1;
+    font-weight: 400;
+    font-size: 74px;
+    text-align: center;
+    color: #000000;
+
+}
 
 }
 

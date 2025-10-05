@@ -1603,9 +1603,10 @@ body {
 
 
 /* collection page with filter */
-.purples{
- background-color: #6B0572;
+.purples {
+    background-color: #6B0572;
 }
+
 .purple-box {
     color: white;
     font-family: logoh1;
@@ -2221,6 +2222,7 @@ body {
     margin: 2% 0;
     justify-content: space-between;
 }
+
 .gallery-payment h6 {
     font-size: 22px;
     font-weight: 300;
@@ -2228,6 +2230,7 @@ body {
     color: #3C2A5A;
     margin-top: 2%;
 }
+
 .gallery-payment button {
     border: 1px solid #0000003D;
     background-color: transparent;
@@ -2248,7 +2251,7 @@ body {
     font-family: outfit;
     font-weight: 600;
     font-size: 22px;
-   
+
 }
 
 .product-discription h6 {
@@ -2259,14 +2262,16 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.addbasket{
+
+.addbasket {
     display: flex;
     justify-content: center;
     margin: 4% 0;
 }
+
 .addbasket button {
     background-color: #6B0572;
-    color:white;
+    color: white;
     padding: 10px 0px;
     width: 95%;
     font-size: 18px;
@@ -2276,4 +2281,353 @@ body {
     margin-top: 3%;
     border: 0;
     border: 1px solid #6B05723D;
+}
+
+/* model popup */
+
+.model-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.model-heading h1 {
+    color: #3C2A5A;
+    font-family: logoh1;
+    font-size: 38px;
+    padding-bottom: 3px;
+    font-weight: 400;
+    border-bottom: 3px solid white;
+}
+
+.model-heading button {
+    border: 0;
+    background-color: transparent;
+}
+
+.model-body h2 {
+    color: #3C2A5A;
+    font-family: outfit;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.model-body h2 span {
+    color: #3C2A5A;
+    font-family: outfit;
+    font-weight: 500;
+    font-size: 30px;
+
+}
+
+.white-cut-box {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px dashed #0000003D;
+    background-color: white;
+
+}
+
+.grey-btn button {
+    background-color: #3C2A5A3D;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-family: outfit;
+    font-size: 22px;
+    font-weight: 300;
+    color: #3C2A5A;
+    border: 0;
+}
+
+.white-cut-box h2 {
+    margin-top: 2%;
+    color: #3C2A5A;
+    font-family: outfit;
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+
+
+.model-vase {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.model-vase::-webkit-scrollbar {
+    display: none;
+}
+
+.model-vase {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.model-vase>* {
+    flex: 0 0 calc((100% / 3) - 10px);
+    scroll-snap-align: start;
+}
+
+.collection-cards h4 {
+    order: 1;
+}
+
+.collection-cards .price {
+    order: 2;
+}
+
+.collection-cards .discription {
+    order: 3;
+}
+
+.collection-cards .addtocart {
+    order: 4;
+    width: 100%;
+}
+
+.model-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    gap: 15px;
+}
+
+.model-btn button {
+    font-size: 22px;
+    font-family: outfit;
+    font-weight: 400;
+    border-radius: 12px;
+    width: 30%;
+    border: 0;
+    padding: 7px 10px;
+}
+
+.make-it-perfect {
+    width: 100%;
+}
+
+.model-tab {
+    width: 100% !important;
+
+}
+
+.model-item {
+    color: #3C2A5A !important;
+    font-size: 18px !important;
+    font-family: outfit !important;
+    width: 50% !important;
+    text-align: center !important;
+}
+
+.css-ehhs8s-MuiTabs-indicator {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    width: 100%;
+    -webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #3C2A5A !important;
+}
+
+.css-16iolqj-MuiButtonBase-root-MuiTab-root {
+    width: 50%;
+}
+
+.tab-content {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tab1 {
+    flex: 0 0 calc(50% - 20px);
+}
+
+.tab-img {
+    width: 100%;
+    height: auto;
+}
+
+.tab-img img {
+    width: 100%;
+    height: 180px;
+    border-radius: 7px;
+}
+
+.custom-modal-box {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-height: 95vh;
+    background-color: #EAB8E4;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 2rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.custom-modal-box::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* cart page */
+.shiping {
+    width: 50%;
+}
+
+.delivery-options {
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+}
+
+.delivery-btn {
+    padding: 10px 15px;
+}
+
+.custom-radio {
+    color: #6B0572 !important;
+}
+
+.delivery-btn .MuiFormControlLabel-label {
+    font-size: 18px !important;
+    font-family: Outfit !important;
+    font-weight: 400 !important;
+}
+
+.delivery-btn .MuiFormControlLabel-label span {
+    color: #6B0572 !important;
+    font-weight: 300;
+}
+
+.shiping h1 {
+    margin-top: 2%;
+    color: #3C2A5A;
+    font-family: logoh1;
+    font-weight: 400;
+    font-size: 38px;
+    margin-bottom: 10px;
+
+}
+
+
+.shiping h2 {
+    margin-top: 2%;
+    color: #3C2A5A;
+    font-family: outfit;
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.tab1 h4 {
+    margin-top: 2%;
+    color: #3C2A5A;
+    font-family: outfit;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cart-content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.cart-basket {
+    width: 50%;
+}
+
+.summary-order {
+    width: 50%;
+}
+
+.cart-content h1 {
+    margin-top: 2%;
+    color: #3C2A5A;
+    font-family: logoh1;
+    font-weight: 400;
+    font-size: 38px;
+    margin-bottom: 10px;
+
+}
+.your-picks{
+    border: 1px solid  #0000001F;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.your-picks h4 {
+    color: #3C2A5A;
+    font-family: outfit;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.heart-message{
+    border: 1px solid  #0000001F;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2%;
+}
+.heart-btn{
+    display: flex;
+    gap: 15px;
+}
+.heart-btn button{
+    background-color: transparent;
+    border: 0;
+}
+/* term n conditions */
+.MORA-section{
+    width: 100%;
+    padding: 2rem;
+}
+.MORA-section h1{
+    font-family: logoh1;
+    font-weight: 400;
+    font-size: 74px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.MORA-section h6{
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+
+.MORA-section h4{
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+    margin: 30px 0 15px 0;
+}
+.MORA-section ul li{
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+  
 }

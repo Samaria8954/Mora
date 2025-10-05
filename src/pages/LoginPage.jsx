@@ -64,7 +64,7 @@ export const LoginPage = () => {
                     <img src="images/3.png" alt="" />
                 </div>
             </div >
-            <Footer />
+             <Footer bgImage="/images/footer-img.png"/>
         </>
     );
 };
