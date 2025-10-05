@@ -2491,6 +2491,7 @@ body {
 /* cart page */
 .shiping {
     width: 50%;
+   
 }
 
 .delivery-options {
@@ -2570,11 +2571,13 @@ body {
     margin-bottom: 10px;
 
 }
-.your-picks{
-    border: 1px solid  #0000001F;
+
+.your-picks {
+    border: 1px solid #0000001F;
     border-radius: 10px;
     padding: 2rem;
 }
+
 .your-picks h4 {
     color: #3C2A5A;
     font-family: outfit;
@@ -2582,26 +2585,66 @@ body {
     font-size: 18px;
     margin-bottom: 20px;
 }
-.heart-message{
-    border: 1px solid  #0000001F;
+
+.heart-message {
+    border: 1px solid #0000001F;
     border-radius: 10px;
     padding: 2rem;
     margin-top: 2%;
 }
-.heart-btn{
+
+.heart-btn {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
-.heart-btn button{
-    background-color: transparent;
+
+.heart-btn button {
+    background-color: #3C2A5B;
+    border-radius: 50%;
+    font-size: 18px;
+    padding: 5px;
     border: 0;
 }
+
+.heart-btn h5 {
+    color: #000000;
+    font-family: outfit;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.heart-message h6 {
+     color: #6B0572;
+    font-family: outfit;
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 3%;
+}
+
+.heart-text{
+    border: 1px solid #0000001F;
+    padding: 10px;
+    color: #6B0572;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    font-family: outfit;
+}
+.heart-text::placeholder {
+  color: #6B0572;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  opacity: 0.5;
+  font-weight: 300;
+}
 /* term n conditions */
-.MORA-section{
+.MORA-section {
     width: 100%;
     padding: 2rem;
 }
-.MORA-section h1{
+
+.MORA-section h1 {
     font-family: logoh1;
     font-weight: 400;
     font-size: 74px;
@@ -2610,24 +2653,25 @@ body {
 
 }
 
-.MORA-section h6{
+.MORA-section h6 {
     font-family: outfit;
     font-weight: 400;
     font-size: 18px;
     color: #000000;
 }
 
-.MORA-section h4{
+.MORA-section h4 {
     font-family: outfit;
     font-weight: 400;
     font-size: 22px;
     color: #000000;
     margin: 30px 0 15px 0;
 }
-.MORA-section ul li{
+
+.MORA-section ul li {
     font-family: outfit;
     font-weight: 400;
     font-size: 18px;
     color: #000000;
-  
+
 }
