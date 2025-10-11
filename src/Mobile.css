@@ -773,6 +773,84 @@
         border-bottom: 2px solid #3C2A5A;
     }
 
+
+    .checkout-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .checkout-11 {
+        width: 100%;
+        padding: 0rem;
+        border: 0;
+
+    }
+
+    .css-13xfq8m-MuiTabPanel-root {
+        padding: 20px 0px !important;
+    }
+
+    .checkout-12 {
+        width: 100%;
+        padding: 0rem;
+        border: 0;
+    }
+
+    .switch h5 {
+        font-size: 20px;
+        color: #141718;
+        font-weight: 400;
+        font-family: logoh1;
+    }
+
+   
+    .summary-icon {
+        display: none;
+    }
+
+    .alert {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .your-picks {
+        padding: 1rem 2rem;
+    }
+
+    .picks {
+        margin-bottom: 4%;
+    }
+
+    .coupon input {
+        padding: 0px 2px;
+    }
+
+    .checkout-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .checkout-21 {
+        width: 100%;
+        height: fit-content;
+    }
+    .debit {
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.card-number h5 {
+    margin: 0px 0 20px 0;
+}
+.complete {
+    width: 100%;
+}
+.detailing {
+    width: 100%;
+}
 }
 
 @media (min-width:320px) and (max-width:380px) {
@@ -998,7 +1076,34 @@
 
     }
 
+    /* checkout */
+    .checkout-tabs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-size: 11px !important;
+    }
 
+    .css-1usuzwp-MuiButtonBase-root-MuiTab-root {
+        padding: 12px 5px !important;
+    }
+
+    .coupon input {
+        font-size: 12px;
+    }
+
+    .coupon {
+        padding: 5px;
+        gap: 3px;
+    }
+
+    .detailing h6 {
+    font-size: 13px;
+    }
+     .detailing h5 {
+    font-size: 13px;
+    }
 }
 
 @media (min-width:320px) and (max-width:500px) {
@@ -1056,6 +1161,7 @@
         height: auto;
         text-align: end;
     }
+
 
 }
 
@@ -1263,6 +1369,18 @@
 
     }
 
+    /* checkout */
+    .css-1usuzwp-MuiButtonBase-root-MuiTab-root {
+        padding: 12px 8px !important;
+    }
+
+    .checkout-tabs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-size: 13px !important;
+    }
 
 }
 

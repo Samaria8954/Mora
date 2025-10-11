@@ -39,7 +39,7 @@ export const CartContent = () => {
                                     </div>
                                     <div className="b-heading">
                                         <h5>Bunch Flower</h5>
-                                        <button type='button'><IoClose style={{ fontSize: "20px", color: "#6C7275" }} />Remove</button>
+                                        <button type='button ' ><IoClose style={{ fontSize: "18px", color: "#6C7275" }} /><h6 style={{ color: "rgb(108, 114, 117)" , fontSize: "16px"}}>Remove</h6></button>
                                     </div>
                                 </div>
                                 <div className="b-count">
@@ -60,9 +60,9 @@ export const CartContent = () => {
                                     <div className="b-img">
                                         <img src="images/3.png" alt="" />
                                     </div>
-                                    <div className="b-heading">
+                                     <div className="b-heading">
                                         <h5>Bunch Flower</h5>
-                                        <button type='button'><IoClose style={{ fontSize: "20px", color: "#6C7275" }} />Remove</button>
+                                        <button type='button ' ><IoClose style={{ fontSize: "18px", color: "#6C7275" }} /><h6 style={{ color: "rgb(108, 114, 117)" , fontSize: "16px"}}>Remove</h6></button>
                                     </div>
                                 </div>
                                 <div className="b-count">
@@ -126,7 +126,7 @@ export const CartContent = () => {
                             <h3>Have a Coupon?</h3>
                             <h6>Add your code for an instant cart discount</h6>
                             <div className="coupon">
-                                <RiCouponLine style={{ fontSize: "30px", color: "#6C7275" }} />
+                                <RiCouponLine className='coupon-icon'/>
                                 <input type="text" placeholder='Coupon Code' />
                                 <button className='ms-auto'>Apply</button>
                             </div>

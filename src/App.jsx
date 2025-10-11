@@ -12,6 +12,7 @@ import { ReviewPage } from "./pages/Review";
 import { CollectionPage } from "./pages/CollectionPage";
 import { TermNCondition } from "./pages/TermNCondition";
 import { RefundPolicy } from "./pages/RefundPolicy";
+import { Checkout } from "./pages/Checkout";
 
 
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
             {
                 path: "cart",
                 element: <CartPage />
+            },
+             {
+                path: "checkout",
+                element: <Checkout />
             },
              {
                 path: "terms&conditions",

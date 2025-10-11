@@ -2148,7 +2148,7 @@ body {
     padding: 10px 0px;
     width: 100%;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 500 !important;
     font-family: MyFont;
     border-radius: 10px;
     margin-top: 3%;
@@ -2551,12 +2551,13 @@ body {
 .cart-content {
     display: flex;
     gap: 20px;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: flex-start;
 }
-.cart-content > div {
-  flex: 0 0 calc(50% - 10px);
+
+.cart-content>div {
+    flex: 0 0 calc(50% - 10px);
 }
 
 
@@ -2623,7 +2624,7 @@ body {
 }
 
 .b-heading button {
-    color: #6C7275;
+    color: rgb(108, 114, 117) !important;
     font-size: 14px;
     font-family: outfit;
     font-weight: 600;
@@ -2789,7 +2790,6 @@ body {
     gap: 10px;
     align-items: end;
     padding-bottom: 10px;
-    border-bottom: 2px solid #3C2A5A;
 
 }
 
@@ -2868,6 +2868,7 @@ body {
     border: 1px solid #6C7275;
     padding: 10px;
     display: flex;
+    width: 100%;
     align-items: center;
     font-family: outfit;
     margin-top: 20px;
@@ -2899,4 +2900,446 @@ body {
     font-weight: 300;
     background-color: transparent;
     font-size: 16px;
+}
+
+.css-1gsv261 {
+    border-bottom: 0 !important;
+}
+
+.css-1usuzwp-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #23262F !important;
+    font-size: 16px !important;
+    font-family: outfit !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+
+.css-1qltlow-MuiTabs-indicator {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    width: 100%;
+    -webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #6B0572 !important;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+    font-size: 14px;
+    font-family: outfit;
+    text-transform: none !important;
+}
+
+.css-hzcega-MuiTabs-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center !important;
+}
+
+.checkout-1 {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.css-13xfq8m-MuiTabPanel-root {
+    padding: 24px 0px !important;
+}
+
+.checkout-11 {
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #0000003D;
+    padding: 2rem;
+    font-family: outfit;
+}
+
+.checkout-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkout-11 h5 {
+    font-size: 22px;
+    color: #141718;
+    font-weight: 400;
+}
+
+.checkout-11 input {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: outfit;
+    border: 1px solid #0000003D;
+    border-radius: 7px;
+    margin-bottom: 4%;
+}
+
+.checkout-11 h3 {
+    font-size: 18px;
+    color: #3C2A5A;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.switch h5 {
+    font-size: 20px;
+    color: #141718;
+    font-weight: 400;
+}
+
+
+.css-17jyosd-MuiSwitch-thumb {
+
+    background-color: white !important;
+}
+
+.css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+    background-color: #6B0572 !important;
+    opacity: 1 !important;
+}
+
+.checkout-12 {
+    width: 50%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid #0000003D;
+    padding: 2rem;
+    font-family: outfit;
+}
+
+.identity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.identity h6 {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: outfit;
+    color: #141718;
+}
+
+.css-1umw9bq-MuiSvgIcon-root {
+    font-size: 2.5rem !important;
+    fill: #6B0572 !important;
+}
+
+.alert {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: outfit;
+    color: #6B0572;
+    background-color: #EAB8E480;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.date-time {
+    border-radius: 15px;
+    border: 2px solid #6B0572;
+    padding: 10px;
+    width: 160px;
+}
+
+.date-time h5 {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: outfit;
+    color: #141718;
+}
+
+.date-time h6 {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: outfit;
+    color: #00000099;
+}
+
+.checkout-2 {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.checkout-21 {
+    width: 50%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid #0000003D;
+    padding: 2rem;
+    font-family: outfit;
+}
+
+.checkout-21 h1 {
+    font-size: 28px;
+    font-family: logoh1;
+    color: #141718;
+    margin-bottom: 25px;
+}
+
+.checkout-21 h1 span {
+    color: #EB001B;
+}
+
+.checkout-21 h6 {
+    font-family: outfit;
+    font-size: 16px;
+    color: #141718;
+}
+
+.payment-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.radio-option {
+    width: 100%;
+    margin: 0 !important;
+}
+
+
+.payment-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #1417183D;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.payment-label.selected {
+    background-color: #F3F5F7;
+}
+
+/* icon style */
+.card-icon {
+    font-size: 20px;
+    color: #6b0572;
+}
+
+.debit {
+    width: 100%;
+    border-bottom: 1px solid #0000003D;
+    padding-bottom: 4%;
+}
+
+.Label {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #1417183D;
+    border-radius: 7px;
+    padding: 5px 15px 5px 5px;
+    margin-top: 3%;
+}
+
+.Labels {
+    width: 100% !important;
+    border: 1px solid #1417183D;
+    border-radius: 7px;
+    padding: 5px 15px 5px 5px;
+    margin-top: 3%;
+
+}
+
+.css-19opgx6-MuiFormControlLabel-root {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+}
+
+.css-1q72ply-MuiButtonBase-root-MuiSwitchBase-root-MuiRadio-root.Mui-checked {
+    color: #6B0572 !important;
+}
+
+.css-rizt0-MuiTypography-root {
+    font-family: outfit !important;
+    font-weight: 400;
+    font-size: 16px !important
+}
+
+.Label.selected,
+.Labels.selected {
+    background-color: #F3F5F7;
+}
+
+.card-number {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.card-number h4 {
+    font-family: outfit;
+    color: #6C7275;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-number input {
+    font-family: outfit;
+    color: #6C7275;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #1417183D;
+    border-radius: 7px;
+    padding: 7px;
+    width: 100%;
+    margin: 10px 0 30px 0;
+}
+
+.card-number h5 {
+    font-family: outfit;
+    color: #3C2A5A;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.card-number textarea::placeholder {
+    color: #6B0572;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.Expire {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.expire {
+    width: 50%;
+}
+
+.cvc {
+    width: 50%;
+}
+
+.complete {
+    width: 55%;
+    margin: auto;
+    border: 1px solid #1417183D;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08),
+        0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+
+.complete h2 {
+    font-size: 28px;
+    color: #6C7275;
+    font-weight: 500;
+    font-family: poppins;
+    text-align: center;
+}
+
+.complete h1 {
+    font-size: 44px;
+    color: #141718;
+    font-weight: 500;
+    font-family: logoh1;
+    text-align: center;
+}
+
+.cart-box {
+    position: relative;
+    margin: auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cart-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background-color: #6B0572;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.detailing {
+    width: 55%;
+    margin: 10px auto;
+    display: flex;   
+    gap:10px;
+    justify-content: space-between;
+}
+
+.detailing h6 {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: MyFont;
+    color: #6C7275;
+    text-align: start;
+    align-content: center;
+    margin-bottom: 2px;
+    display: flex;
+}
+
+.detailing h5 {
+     width: 50%;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: MyFont;
+    color: #141718;
+    text-align: left;
+    align-content: center;
+    display: flex;
 }
