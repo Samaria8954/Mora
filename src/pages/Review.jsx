@@ -8,7 +8,7 @@ export const ReviewPage = () => {
       <>
       <HeroSection />
       <CustomerServices />
-      <Footer />
+        <Footer bgImage="/images/footer-img.png"/>
       </>
     );
 };
