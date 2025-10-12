@@ -2443,6 +2443,13 @@ body {
     width: 50%;
 }
 
+.tab-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
 .tab-content {
     margin-top: 2%;
     width: 100%;
@@ -2450,6 +2457,7 @@ body {
     gap: 20px;
     flex-wrap: wrap;
 }
+
 
 .tab1 {
     flex: 1 0 calc(47%);
@@ -2929,7 +2937,6 @@ body {
 [type=submit]:not(:disabled),
 button:not(:disabled) {
     cursor: pointer;
-    font-size: 14px;
     font-family: outfit;
     text-transform: none !important;
 }
@@ -2940,6 +2947,14 @@ button:not(:disabled) {
     display: -ms-flexbox;
     display: flex;
     justify-content: center !important;
+}
+
+.css-6p016c.Mui-selected {
+    color: black !important;
+}
+
+.css-17z6nsr.Mui-checked {
+    color: #6B0572 !important;
 }
 
 .checkout-1 {
@@ -2964,6 +2979,7 @@ button:not(:disabled) {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 14px;
 }
 
 .checkout-11 h5 {
@@ -3015,6 +3031,20 @@ button:not(:disabled) {
     opacity: 1 !important;
 }
 
+.css-17z6nsr.Mui-checked+.MuiSwitch-track {
+    opacity: 0.5;
+    background-color: #6B0572 !important;
+}
+
+.css-jkmkwa {
+    position: absolute;
+    height: 2px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #6B0572 !important;
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .checkout-12 {
     width: 50%;
     height: fit-content;
@@ -3039,7 +3069,13 @@ button:not(:disabled) {
 
 .css-1umw9bq-MuiSvgIcon-root {
     font-size: 2.5rem !important;
-    fill: #6B0572 !important;
+    color: #6B0572 !important;
+}
+
+.css-d771x4.Mui-checked,
+.css-d771x4.MuiCheckbox-indeterminate {
+    color: #6B0572 !important;
+    font-size: 2.5rem !important;
 }
 
 .alert {
@@ -3316,8 +3352,8 @@ button:not(:disabled) {
 .detailing {
     width: 55%;
     margin: 10px auto;
-    display: flex;   
-    gap:10px;
+    display: flex;
+    gap: 10px;
     justify-content: space-between;
 }
 
@@ -3334,7 +3370,7 @@ button:not(:disabled) {
 }
 
 .detailing h5 {
-     width: 50%;
+    width: 50%;
     font-size: 14px;
     font-weight: 300;
     font-family: MyFont;
