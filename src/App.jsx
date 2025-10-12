@@ -13,6 +13,7 @@ import { CollectionPage } from "./pages/CollectionPage";
 import { TermNCondition } from "./pages/TermNCondition";
 import { RefundPolicy } from "./pages/RefundPolicy";
 import { Checkout } from "./pages/Checkout";
+import { CheckoutPickup } from "./pages/CheckoutPickup";
 
 
 
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
              {
                 path: "checkout",
                 element: <Checkout />
+            },
+             {
+                path: "pickupcheckout",
+                element: <CheckoutPickup />
             },
              {
                 path: "terms&conditions",

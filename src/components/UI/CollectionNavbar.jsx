@@ -33,12 +33,12 @@ export const CollectionNavbar = () => {
                         Search
                     </div>
                     {/* Account */}
-                    <div className="m1" onClick={() => navigate("/login")}>
+                    <div className="m1" onClick={() => { navigate("/login"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
                         <CgProfile className="icon-nav"  />
                         My Account
                     </div>
                     {/* Basket */}
-                    <div className="m1">
+                    <div className="m1" onClick={() => { navigate("/cart"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
                         <PiCourtBasketballDuotone className="icon-nav" />
                         Basket
                     </div>

@@ -1,4 +1,3 @@
-
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -11,16 +10,39 @@ import { RiEBike2Fill } from "react-icons/ri";
 import { RiCouponLine } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export const CartContent = () => {
 
+    const navigate = useNavigate();
     const [tabValue, setTabValue] = useState("one");
+    const [quantity, setQuantity] = useState(1);
+
+    // 🚀 new state for shipping type
+    const [shippingType, setShippingType] = useState("delivery");
+
+    // handle radio change
+    const handleShippingChange = (event) => {
+        setShippingType(event.target.value);
+    };
+
     const handleTabChange = (event, newValue) => {
         setTabValue(newValue);
     };
-    const [quantity, setQuantity] = useState(1);
+
     const handleIncrease = () => setQuantity(prev => prev + 1);
     const handleDecrease = () => setQuantity(prev => (prev > 1 ? prev - 1 : 1));
+
+    // 🚀 Handle button navigation based on shipping type
+    const handleProceed = () => {
+        if (shippingType === "pickup") {
+            navigate("/pickupcheckout");
+        } else {
+            navigate("/checkout");
+        }
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <>
             <div className="collection-section">
@@ -39,57 +61,32 @@ export const CartContent = () => {
                                     </div>
                                     <div className="b-heading">
                                         <h5>Bunch Flower</h5>
-                                        <button type='button ' ><IoClose style={{ fontSize: "18px", color: "#6C7275" }} /><h6 style={{ color: "rgb(108, 114, 117)" , fontSize: "16px"}}>Remove</h6></button>
+                                        <button type='button ' >
+                                            <IoClose style={{ fontSize: "18px", color: "#6C7275" }} />
+                                            <h6 style={{ color: "rgb(108, 114, 117)", fontSize: "16px" }}>Remove</h6>
+                                        </button>
                                     </div>
                                 </div>
                                 <div className="b-count">
-                                    <button onClick={handleDecrease} className="qty-btn">
-                                        <FaMinus />
-                                    </button>
+                                    <button onClick={handleDecrease} className="qty-btn"><FaMinus /></button>
                                     <span className="qty-value">{quantity}</span>
-                                    <button onClick={handleIncrease} className="qty-btn">
-                                        <FaPlus />
-                                    </button>
+                                    <button onClick={handleIncrease} className="qty-btn"><FaPlus /></button>
                                 </div>
-                                <div className="b-price">
-                                    <h5>OMR-19</h5>
-                                </div>
-                            </div>
-                            <div className="bunch">
-                                <div className="b-flower">
-                                    <div className="b-img">
-                                        <img src="images/3.png" alt="" />
-                                    </div>
-                                     <div className="b-heading">
-                                        <h5>Bunch Flower</h5>
-                                        <button type='button ' ><IoClose style={{ fontSize: "18px", color: "#6C7275" }} /><h6 style={{ color: "rgb(108, 114, 117)" , fontSize: "16px"}}>Remove</h6></button>
-                                    </div>
-                                </div>
-                                <div className="b-count">
-                                    <button onClick={handleDecrease} className="qty-btn">
-                                        <FaMinus />
-                                    </button>
-                                    <span className="qty-value">{quantity}</span>
-                                    <button onClick={handleIncrease} className="qty-btn">
-                                        <FaPlus />
-                                    </button>
-                                </div>
-                                <div className="b-price">
-                                    <h5>OMR-19</h5>
-                                </div>
+                                <div className="b-price"><h5>OMR-19</h5></div>
                             </div>
                         </div>
+
                         <div className="heart-message">
                             <div className="heart-btn">
                                 <button>🤍</button>
                                 <h5>Message from the Heart</h5>
                             </div>
-                            <h6>Express your felling and share your love to loved ones </h6>
-                            <textarea name="" id="" className='heart-text mt-5' placeholder='Type your message here to deliver your thoughts with love'></textarea>
+                            <h6>Express your felling and share your love to loved ones</h6>
+                            <textarea className='heart-text mt-5' placeholder='Type your message here to deliver your thoughts with love'></textarea>
 
                             <div className="order-now mt-2 d-sm-none">
-                                    <button type="button">Message from the Heart</button>
-                                </div>
+                                <button type="button">Message from the Heart</button>
+                            </div>
                         </div>
                     </div>
 
@@ -117,80 +114,81 @@ export const CartContent = () => {
                                     <h5>OMR-21</h5>
                                 </div>
 
-                                <div className="order-now mt-2">
+                                {/* ✅ Conditional navigation */}
+                                <div className="order-now mt-2" onClick={handleProceed}>
                                     <button type="button">Proceed to Checkout</button>
                                 </div>
                             </div>
                         </div>
+
                         <div className="summary2">
                             <h3>Have a Coupon?</h3>
                             <h6>Add your code for an instant cart discount</h6>
                             <div className="coupon">
-                                <RiCouponLine className='coupon-icon'/>
+                                <RiCouponLine className='coupon-icon' />
                                 <input type="text" placeholder='Coupon Code' />
                                 <button className='ms-auto'>Apply</button>
                             </div>
                         </div>
                     </div>
 
+                    {/* 🚀 Shipping Section */}
+                    <div className="shiping">
+                        <h1>Shipping</h1>
+                        <RadioGroup
+                            className="delivery-options"
+                            value={shippingType}
+                            onChange={handleShippingChange}
+                        >
+                            <FormControlLabel
+                                value="pickup"
+                                control={<Radio className="custom-radio" />}
+                                label="Pickup From Shop"
+                                className="delivery-btn"
+                            />
+                            <FormControlLabel
+                                value="delivery"
+                                control={<Radio className="custom-radio" />}
+                                label={<>Delivery: <span>OMR 4.00</span></>}
+                                className="delivery-btn"
+                            />
+                        </RadioGroup>
 
-                     <div className="shiping">
-                    <h1>Shiping</h1>
-                    <RadioGroup className="delivery-options" defaultValue="Delivery:OMR 4.00">
-                        <FormControlLabel
-                            value="pickup"
-                            control={<Radio className="custom-radio" />}
-                            label="Pickup From Shop"
-                            className="delivery-btn"
-                        />
-                        <FormControlLabel
-                            value="delivery"
-                            control={<Radio className="custom-radio" />}
-                            label={
-                                <>
-                                    Delivery: <span>OMR 4.00</span>
-                                </>
-                            }
-                            className="delivery-btn"
-                        />
-                    </RadioGroup>
-                    <div className="make-it-perfect">
-                        <h1>Make it Perfect</h1>
-                        <Box sx={{ width: "100%" }}>
-                            <Tabs
-                                className="model-tab"
-                                value={tabValue}
-                                onChange={handleTabChange}
-                                textColor="secondary"
-                                indicatorColor="secondary"
-                            >
-                                <Tab value="one" label="Ribbons" className="model-item" />
-                                <Tab value="two" label="Fragrances" className="model-item" />
-                            </Tabs>
+                        <div className="make-it-perfect">
+                            <h1>Make it Perfect</h1>
+                            <Box sx={{ width: "100%" }}>
+                                <Tabs
+                                    className="model-tab"
+                                    value={tabValue}
+                                    onChange={handleTabChange}
+                                    textColor="secondary"
+                                    indicatorColor="secondary"
+                                >
+                                    <Tab value="one" label="Ribbons" className="model-item" />
+                                    <Tab value="two" label="Fragrances" className="model-item" />
+                                </Tabs>
 
-                            {tabValue === "one" && (
-                                <div className="tab-content">
-                                    <ModelPerfect tabImg="images/tab1.jpg" />
-                                    <ModelPerfect tabImg="images/tab2.jpg" />
-                                    <ModelPerfect tabImg="images/tab3.jpg" />
-                                    <ModelPerfect tabImg="images/tab4.jpg" />
-                                </div>
-                            )}
-                            {tabValue === "two" && (
-                                <div className="tab-content">
-                                    <ModelPerfect tabImg="images/tab2.jpg" />
-                                    <ModelPerfect tabImg="images/tab4.jpg" />
-                                    <ModelPerfect tabImg="images/tab3.jpg" />
-                                    <ModelPerfect tabImg="images/tab1.jpg" />
-                                </div>
-                            )}
-                        </Box>
+                                {tabValue === "one" && (
+                                    <div className="tab-content">
+                                        <ModelPerfect tabImg="images/tab1.jpg" />
+                                        <ModelPerfect tabImg="images/tab2.jpg" />
+                                        <ModelPerfect tabImg="images/tab3.jpg" />
+                                        <ModelPerfect tabImg="images/tab4.jpg" />
+                                    </div>
+                                )}
+                                {tabValue === "two" && (
+                                    <div className="tab-content">
+                                        <ModelPerfect tabImg="images/tab2.jpg" />
+                                        <ModelPerfect tabImg="images/tab4.jpg" />
+                                        <ModelPerfect tabImg="images/tab3.jpg" />
+                                        <ModelPerfect tabImg="images/tab1.jpg" />
+                                    </div>
+                                )}
+                            </Box>
+                        </div>
                     </div>
                 </div>
-                </div>
-               
-
             </div>
         </>
     );
-}
+};

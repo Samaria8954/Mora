@@ -3,10 +3,11 @@ import { IoIosMenu, IoIosSearch } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
 import { RiShoppingBag2Line } from "react-icons/ri";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
     const [showSearch, setShowSearch] = useState(false);
-
+    const navigate = useNavigate();
     return (
         <>
             <div className="container">
@@ -32,7 +33,7 @@ export const Navbar = () => {
                     </div>
 
                     {/* Basket */}
-                    <div className="m1">
+                    <div className="m1" onClick={() => { navigate("/cart"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
                         <RiShoppingBag2Line className="icon-nav" />
                         Basket
                     </div>
@@ -42,7 +43,7 @@ export const Navbar = () => {
                     <div className="m1" onClick={() => setShowSearch(true)}>
                         <IoIosSearch className="icon-nav1" />
                     </div>
-                    <div className="m1">
+                    <div className="m1" onClick={() => { navigate("/cart"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
                         <HiOutlineShoppingBag className="icon-nav1" />
                     </div>
                     <div

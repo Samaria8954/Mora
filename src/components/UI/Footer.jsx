@@ -1,6 +1,9 @@
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
+
 export const Footer = ({bgImage}) => {
+     const navigate = useNavigate();
     return (
         <>
             <div
@@ -48,8 +51,8 @@ export const Footer = ({bgImage}) => {
                                     <ul>
                                         <li><a href="#">Payment Options</a></li>
                                         <li><a href="#">How to Order</a></li>
-                                        <li><a href="#">Terms & Conditions</a></li>
-                                        <li><a href="#">Refund Policy</a></li>
+                                        <li onClick={() => { navigate("/terms&conditions"); window.scrollTo({ top: 0, behavior: "smooth" }); }}><a href="#">Terms & Conditions</a></li>
+                                        <li onClick={() => { navigate("/refundpolicy"); window.scrollTo({ top: 0, behavior: "smooth" }); }} ><a href="#">Refund Policy</a></li>
                                         <li>
                                             <div className="pay-cards">
                                                 <img src="images/card1.png" alt="" />

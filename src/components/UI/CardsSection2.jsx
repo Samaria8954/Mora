@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { CollectionCards } from "./CollectionCards";
+import { useNavigate } from "react-router-dom";
 
 export const CardsSection2 = () => {
   const [isMobile, setIsMobile] = useState(false);
+const navigate = useNavigate();
 
   useEffect(() => {
     const checkScreen = () => setIsMobile(window.innerWidth <= 576);
@@ -29,7 +31,7 @@ export const CardsSection2 = () => {
         <h1 className="my-auto">Timeless Vase Collection</h1>
         <button
           type="button"
-          style={{ backgroundColor: "#6B05723D", color: "black" }}
+          style={{ backgroundColor: "#6B05723D", color: "black" }} onClick={() => { navigate("/collection"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
         >
           See All
         </button>

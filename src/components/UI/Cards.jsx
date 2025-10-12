@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { CollectionCards } from "./CollectionCards";
+import { useNavigate } from "react-router-dom";
 
 export const Cards = () => {
   const [isMobile, setIsMobile] = useState(false);
+ const navigate = useNavigate();
 
   useEffect(() => {
     const checkScreen = () => setIsMobile(window.innerWidth <= 576);
@@ -15,7 +17,7 @@ export const Cards = () => {
     <div className="collection-section">
       <div className="cards-heading">
         <h1 className="my-auto">Bestsellers of the Season</h1>
-        <button type="button">View All</button>
+        <button type="button" onClick={() => { navigate("/collection"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>View All</button>
       </div>
       <div className="cards">
         <CollectionCards

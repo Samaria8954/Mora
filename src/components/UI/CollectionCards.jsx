@@ -1,18 +1,21 @@
 import { DynamicPerfect } from "./DynamicPerfect";
+import { useNavigate } from "react-router-dom";
 
 export const CollectionCards = ({ discount, title, flowering, catogery, Perfectgift }) => {
+    const navigate = useNavigate();
     return (
-        <div className="collection-cards">
-
-            <div className="off">
-                <button type="button">{discount}% Off</button>
-            </div>
-            <img src={flowering} alt="" />
-            <h4 className="me-5">{title}</h4>
-            <div className="price mt-3 mt-sm-1">
-                <h6>OMR</h6>
-                <h5>40</h5>
-                <span>60</span>
+        <div className="collection-cards" >
+            <div onClick={() => { navigate("/product"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+                <div className="off">
+                    <button type="button">{discount}% Off</button>
+                </div>
+                <img src={flowering} alt="" />
+                <h4 className="me-5">{title}</h4>
+                <div className="price mt-3 mt-sm-1">
+                    <h6>OMR</h6>
+                    <h5>40</h5>
+                    <span>60</span>
+                </div>
             </div>
             <DynamicPerfect
                 catogery={catogery}

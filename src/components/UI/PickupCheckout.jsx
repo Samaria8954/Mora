@@ -21,9 +21,10 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import { FaRegCreditCard } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { CalendarPicker } from './CalendarPicker';
+import { FaPersonChalkboard } from "react-icons/fa6";
 
-
-export const CheckoutContent = () => {
+export const PickupCheckout = () => {
     const [expanded, setExpanded] = React.useState(false);
     const [value, setValue] = React.useState('1');
     const navigate = useNavigate();
@@ -172,13 +173,11 @@ export const CheckoutContent = () => {
                                         By checking this box, we will not share any of your personal details with the recipient - even if they call to ask.
                                     </div>
                                     <div className="summary-icon mt-5" style={{ border: "0" }}>
-                                        <RiEBike2Fill style={{ color: "#3C2A5A", fontSize: "30px" }} />
-                                        <h4>Delivery Time </h4>
+                                        <FaPersonChalkboard style={{ color: "#3C2A5A", fontSize: "30px" }} />
+                                        <h4>Pickup </h4>
                                     </div>
-                                    <div className="date-time mt-3">
-                                        <h5 className='mb-4'>12 October</h5>
-                                        <h5 className='mb-2'>Today</h5>
-                                        <h6>9:00 am-12:00 pm</h6>
+                                    <div className="date-time2 mt-3">
+                                       <CalendarPicker />
                                     </div>
                                 </div>
 
